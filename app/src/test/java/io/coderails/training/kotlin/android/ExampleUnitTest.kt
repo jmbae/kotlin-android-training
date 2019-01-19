@@ -1,4 +1,4 @@
-package io.coderails.kotlin_android_training
+package io.coderails.training.kotlin.android
 
 import org.junit.Test
 
