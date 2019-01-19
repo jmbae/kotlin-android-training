@@ -1,4 +1,4 @@
-package io.coderails.kotlin_android_training_1
+package io.coderails.kotlin_android_training
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
