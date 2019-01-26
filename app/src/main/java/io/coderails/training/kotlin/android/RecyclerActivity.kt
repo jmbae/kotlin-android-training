@@ -34,11 +34,13 @@ class RecyclerActivity : AppCompatActivity() {
             for(i in 0 until jsonArray.length()) {
                 val item = jsonArray.getJSONObject(i)
                 val title = item.getString("title")
-                itemList.add(Item(title))
+                val imageUrl: String = item.getJSONObject("media").getString("m")
+                itemList.add(Item(title=title, imageUrl = imageUrl))
             }
 
             val adapter = MyAdapter()
             adapter.itemList = itemList
+            adapter.queue = queue
             recycler_view.adapter = adapter
 
         }, Response.ErrorListener { error ->
